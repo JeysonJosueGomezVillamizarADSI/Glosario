@@ -1,11 +1,11 @@
-let numeros = [1,2,3,4,5];
-for (x in numeros) {
-    console.log(numeros[x]);
-}
-/*Imprime
-1
-2
-3
-4
-5
-*/
+addEventListener('DOMContentLoaded', (e) => {
+const lista = ['a', 'b', 'c','d','e'];
+
+lista.forEach(element => alert(element));
+
+// Imprime: "a"
+// Imprime: "b"
+// Imprime: "c"
+// Imprime: "d"
+// Imprime: "e"
+});

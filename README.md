@@ -2,7 +2,7 @@
 
 Iteración es repetir un proceso de un bloque de código en una secuencia determinada o hasta que se produce un resultado específico. En este ejemplo vemos bien como funciona
 
-```js
+```javascript
 for (let i = 0; i < a.length; i++) {
   if (a[i] === theValue) {
     break;
@@ -27,3 +27,25 @@ for (x in numeros) {
 5
 */
 ```
+
+# For Each
+
+Es un tipo especial de bucle que  permite recorrer estructuras que contienen varios elementos ( matrices, recursos u objetos) sin necesidad de preocuparse por el número de elementos.
+
+
+
+```javascript
+const array1 = ['a', 'b', 'c','d','e'];
+
+array1.forEach(element => console.log(element));
+
+// Imprime: "a"
+// Imprime: "b"
+// Imprime: "c"
+// Imprime: "d"
+// Imprime: "e"
+
+```
+
+
+
