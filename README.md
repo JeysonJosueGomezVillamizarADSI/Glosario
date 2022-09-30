@@ -47,5 +47,27 @@ array1.forEach(element => console.log(element));
 
 ```
 
+# Map
 
+Map es un método que nos permite devolver un nuevo arreglo de datos partiendo de un arreglo, dicho así, no mutamos los datos del arreglo original, ahora tenemos un nuevo arreglo con los valores resultantes.
+
+
+
+```javascript
+ arreglo.map(function(elementoActual, indice, arregloOriginal) {  ... código });
+
+    const products = [
+        { id: "1", name: "shirt", category: "clothing" },
+        { id: "2", name: "Sports Tennis", category: "accessories" },
+        { id: "3", name: "Casual shoes", category: "footwear" },
+        { id: "4", name: "skirt", category: "clothing" },
+        { id: "5", name: "tie", category: "clothing" }
+    ]
+    let nameOfProducts = products.map((product, index, array) => {
+        // Cómo solo queremos los nombres, retornamos "name".
+        return product.name;
+    })
+
+    console.log(nameOfProducts2);
+```
 
