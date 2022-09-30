@@ -71,3 +71,27 @@ Map es un método que nos permite devolver un nuevo arreglo de datos partiendo d
     console.log(nameOfProducts2);
 ```
 
+
+
+# Filter
+
+El método Filter() nos permite filtrar solo los elementos que deseamos (segun ciertos criterios) y devolverlos en un nuevo array.
+
+
+
+```javascript
+let gente = [
+    {nombre: "aaron", edad: 65},
+    {nombre: "beth", edad: 2},
+    {nombre: "cara", edad: 13},
+    {nombre: "daniel", edad: 3},
+    {nombre: "ella", edad: 25},
+    {nombre: "fin", edad: 1},
+    {nombre: "george", edad: 43},
+]
+
+let pequeños = gente.filter(persona => persona.edad <= 3)
+
+console.log(pequeños);
+
+```
