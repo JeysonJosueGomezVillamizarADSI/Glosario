@@ -1,12 +1,17 @@
 addEventListener('DOMContentLoaded', (e) => {
 
-    function iniciar() {
-        var nombre = "Jeyson";  // La variable nombre es una variable local creada por iniciar.
-        function mostrarNombre() {  // La función mostrarNombre es una función interna, una clausura.
-          alert(nombre);  // Usa una variable declarada en la función externa.
-        }
-        mostrarNombre();
+    function map(f, a) {
+        let result = []; // Crea un nuevo arreglo
+        let i; // Declara una variable
+        for (i = 0; i != a.length; i++)
+          result[i] = f(a[i]);
+        return result;
       }
-      iniciar();
+      const f = function(x) {
+         return x * x * x;
+      }
+      let numbers = [0, 1, 2, 5, 10];
+      let cube = map(f,numbers);
+      console.log(cube);
 
 });
