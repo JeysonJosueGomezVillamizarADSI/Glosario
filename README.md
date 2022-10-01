@@ -95,3 +95,18 @@ let pequeños = gente.filter(persona => persona.edad <= 3)
 console.log(pequeños);
 
 ```
+
+# Search
+
+ Es un método de cadena que se usa para buscar una cadena específica o una expresión regular.
+
+- El método search() no cambia el valor de la *cadena* original .
+- El método search() realiza una búsqueda que distingue entre mayúsculas y minúsculas.
+
+``
+
+```javascript
+let text = "El señor Carlos tiene una casa en las montañas";
+let position = text.search("casa");
+console.log(position)
+```
