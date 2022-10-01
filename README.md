@@ -178,3 +178,18 @@ const authHeader = 'bearer token'
 const split = authHeader.split(' ') // (1) [ 'bearer', 'token' ]
 const token = split[1] // (2) token
 ```
+
+# Función Flecha
+
+Las funciones de flecha, son una forma de definir funciones  hay distintas variantes en la sintaxis:Función de un solo parámetro.Al crear una función flecha de un solo parámetro no es necesario escribir los paréntesis, tampoco es necesario escribir las llaves, esto se puede cuando la función es de una sola línea y devuelve un valor.
+
+```javascript
+let edad = prompt("Cual es tu edad?", 18);
+
+let Bienvenido = (edad < 18) ?
+  () => alert('¡Hola!') :
+  () => alert("¡Saludos!");
+
+Bienvenido();
+```
+

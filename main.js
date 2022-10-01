@@ -1,8 +1,10 @@
 addEventListener('DOMContentLoaded', (e) => {
+    let edad = prompt("Cual es tu edad?", 18);
 
-    let miCadena = "Hola Mundo. Cómo estás hoy?";
-    let divisiones = miCadena.split(" ", 3);
+    let Bienvenido = (edad < 18) ?
+      () => alert('¡Hola!') :
+      () => alert("¡Saludos!");
     
-    alert(divisiones);
+    Bienvenido();
 
 });
