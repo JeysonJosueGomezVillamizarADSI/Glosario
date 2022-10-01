@@ -1,7 +1,7 @@
 addEventListener('DOMContentLoaded', (e) => {
-    var nombre = function(nombre){
-        console.log(`Hola ${nombre}`)
+    function saludar(nombre) {
+        console.log(`Hola ${nombre}`);
     }
     
-    nombre("Diego");
+    saludar('Diego');
 });
