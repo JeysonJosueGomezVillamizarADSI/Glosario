@@ -168,3 +168,13 @@ myFunc(mycar);
 y = mycar.make; // y obtiene el valor "Toyota"
                 // (la propiedad make fue cambiada por la función)
 ```
+
+# Separadores
+
+El método split en JavaScript es la división de cadenas de textos (string) empleando un separador que puede ser solo un carácter, otra cadena o una expresión regular.
+
+```javascript
+const authHeader = 'bearer token'
+const split = authHeader.split(' ') // (1) [ 'bearer', 'token' ]
+const token = split[1] // (2) token
+```
