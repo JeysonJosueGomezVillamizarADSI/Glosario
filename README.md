@@ -110,3 +110,21 @@ let text = "El señor Carlos tiene una casa en las montañas";
 let position = text.search("casa");
 console.log(position)
 ```
+
+# Nivel de scop
+
+El nivel de SCOPE  es lo que le da SIGNIFICADO a las variables y además DETERMINA el CONJUNTO DE VARIABLES que podemos ACCEDER en cada línea de código.
+
+
+
+```javascript
+let otraFruta='Pera'
+
+function comer (){
+    let fruta='Manzana';
+    console.log("Estoy comiendo una " + fruta)
+}
+console.log(otraFruta)
+```
+
+ 

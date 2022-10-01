@@ -1,7 +1,11 @@
 addEventListener('DOMContentLoaded', (e) => {
-    
-    let text = "El señor Carlos tiene una casa en las montañas";
-    let position = text.search("casa");
-    console.log(position)
+
+    let otraFruta='Pera'
+
+    function comer (){
+        let fruta='Manzana';
+        console.log("Estoy comiendo una " + fruta)
+    }
+    console.log(otraFruta)
 
 });
