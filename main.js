@@ -1,10 +1,7 @@
 addEventListener('DOMContentLoaded', (e) => {
-    let edad = prompt("Cual es tu edad?", 18);
-
-    let Bienvenido = (edad < 18) ?
-      () => alert('¡Hola!') :
-      () => alert("¡Saludos!");
+    var nombre = function(nombre){
+        console.log(`Hola ${nombre}`)
+    }
     
-    Bienvenido();
-
+    nombre("Diego");
 });
